@@ -1,1 +1,13 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
+
+  //   background: getColor('main-bg-color');
+  //   color: getColor('main-color');
+}
