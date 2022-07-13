@@ -6,6 +6,7 @@
   line-height: 1.21;
   text-transform: uppercase;
   color: #000000;
+
   @media screen and (min-width: 768px) {
     font-weight: 600;
     font-size: 14px;
@@ -18,7 +19,8 @@
     display: none;
     @media screen and (min-width: 768px) {
       display: block;
-      margin-left: 12px;
+      margin-left: 35px;
+      margin-right: 35px;
     }
   }
 }
@@ -37,7 +39,7 @@
       margin-left: 20px;
     }
     &__tablet li {
-      margin-right: 15px;
+      margin-right: 20px;
     }
     @media screen and (min-width: 1530px) {
       &__tablet {
@@ -47,7 +49,7 @@
         display: flex;
       }
       &__desktop li {
-        margin-right: 15px;
+        margin-right: 35px;
       }
     }
   }
@@ -72,4 +74,11 @@
     text-transform: uppercase;
     color: #000000;
   }
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  margin-top: 20px;
+  background-color: #d1d1d1;
 }

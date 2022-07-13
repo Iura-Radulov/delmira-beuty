@@ -1,0 +1,72 @@
+.hero {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 47px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+  &__logo {
+    position: absolute;
+    top: 110px;
+    left: 56px;
+    width: 140px;
+    @media screen and (min-width: 1530px) {
+      width: 170px;
+      left: 86px;
+    }
+  }
+  &__container {
+    position: absolute;
+    top: 166px;
+    left: 56px;
+    @media screen and (min-width: 1530px) {
+      top: 226px;
+      left: 86px;
+    }
+  }
+  &__title {
+    width: 300px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #000000;
+    @media screen and (min-width: 1530px) {
+      width: 600px;
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 32px;
+    }
+  }
+  &__description {
+    position: relative;
+    width: 200px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #070707;
+    @media screen and (min-width: 1530px) {
+      font-size: 16px;
+      width: 400px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 8px;
+      right: -10px;
+      width: 25px;
+      height: 10px;
+      background: url('../images/arrow.svg') 25px 10px;
+      @media screen and (min-width: 1530px) {
+        right: 40px;
+      }
+    }
+  }
+}
