@@ -63,14 +63,18 @@
   }
 }
 
+.more a {
+  color: #070707;
+}
 .more-about {
   display: flex;
   &__item:not(:last-child) {
     margin-right: 15px;
   }
   &__link {
-    font-size: 13px;
-    line-height: 1.21;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
     text-transform: uppercase;
     color: #000000;
   }
