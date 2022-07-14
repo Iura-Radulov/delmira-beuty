@@ -70,6 +70,7 @@
 .examples {
   @media screen and (min-width: 1530px) {
     display: flex;
+    padding-left: 80px;
   }
   &__item:not(:last-child) {
     @media screen and (min-width: 1530px) {

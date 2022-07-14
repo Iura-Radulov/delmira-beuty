@@ -1,0 +1,137 @@
+.subscription {
+  display: flex;
+  &__left {
+    flex-grow: 1;
+    background-color: #e9c5c7;
+    @media screen and (max-width: 1530px) {
+      background-color: #e9c5c7;
+    }
+  }
+  &__right {
+    flex-grow: 1;
+
+    background-color: $white-color;
+    @media screen and (max-width: 1530px) {
+      background-color: #e9c5c7;
+    }
+  }
+  &__container {
+    position: relative;
+    justify-content: flex-end;
+    height: 420px;
+    background-color: #e9c5c7;
+    @media screen and (max-width: 375px) {
+      width: 320px;
+    }
+  }
+  &__list img {
+    @media screen and (max-width: 375px) {
+      width: 300px;
+    }
+  }
+  &__list {
+    z-index: 10;
+    display: block;
+    padding-top: 60px;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      right: 0;
+      top: 70px;
+      padding-top: 0;
+    }
+    @media screen and (min-width: 1530px) {
+      top: 120px;
+      flex-wrap: nowrap;
+    }
+  }
+  &__item:not(:first-child) {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  &__item:last-child {
+    @media screen and (max-width: 1529px) {
+      display: none;
+    }
+  }
+  &__logo {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    @media screen and (min-width: 768px) {
+      top: 40px;
+    }
+    @media screen and (min-width: 1530px) {
+      top: 75px;
+    }
+  }
+  &__arrow-left {
+    margin-right: 20px;
+  }
+}
+
+.subscription-form {
+  padding-top: 50px;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+    padding-top: 100px;
+  }
+  @media screen and (min-width: 1530px) {
+    padding-top: 155px;
+  }
+  &__input {
+    width: 300px;
+    height: 60px;
+    padding-left: 20px;
+    border: 1px solid #000000;
+    font-size: 13px;
+    line-height: 16px;
+    color: $secondary-text-color;
+    @media screen and (min-width: 768px) {
+      width: 400px;
+    }
+    @media screen and (min-width: 1530px) {
+      width: 760px;
+    }
+    &:focus {
+      border-color: rgb(84, 84, 219);
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 60px;
+    margin-top: 15px;
+    background-color: #000000;
+    color: $white-color;
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1530px) {
+      width: 360px;
+      margin-top: 0;
+    }
+  }
+  &__btn-text {
+    margin-right: 8px;
+  }
+}

@@ -13,3 +13,23 @@ body {
   letter-spacing: 0.04em;
   color: $primary-text-color;
 }
+
+.container {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (min-width: 1530px) {
+    width: 1530px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
